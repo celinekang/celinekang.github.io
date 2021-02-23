@@ -1,0 +1,148 @@
+* {
+  font-family: "poppins", sans-serif;
+  background-color: #1d1d1d;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* height: 1000px; */
+  background-color: #1d1d1d;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5cd2b;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b39626;
+}
+
+nav {
+  font-weight: 700;
+}
+nav a:visited {
+  color: #fffaf2;
+}
+
+.sticky-top {
+  transition: 500ms ease;
+  background: transparent;
+}
+.sticky-top.scrolled {
+  background: #141414;
+}
+
+.heading {
+  margin-top: 80px;
+  color: #f5cd2b;
+  text-align: center;
+}
+
+.heading h1 {
+  font-weight: 700;
+}
+
+.paragraph {
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+}
+.paragraph p {
+  font-size: 3vw;
+  color: #fffaf2;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.image {
+  width: 80%;
+  height: auto;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+
+.arrow a {
+  color: #f5cd2b;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: #141414;
+  align-items: center;
+  justify-content: center;
+  color: #fffaf2;
+  text-align: center;
+  padding: 50px;
+  font-size: 3vw;
+}
+
+.footer span {
+  background-color: transparent;
+}
+
+.footer a {
+  color: #fffaf2;
+}
+.copy {
+  font-size: 2vw;
+  color: #f5cb1f;
+}
+
+@media screen and (min-width: 1024px) {
+  .copy {
+    font-size: 1vw;
+  }
+  .footer {
+    font-size: 1.2vw;
+  }
+
+  .paragraph {
+    margin-left: 190px;
+    margin-right: 190px;
+  }
+  .paragraph p {
+    font-size: 1.8vw;
+  }
+
+  .image {
+    width: 80%;
+    height: auto;
+  }
+
+  .arrow {
+    font-size: 1.5vw;
+  }
+}

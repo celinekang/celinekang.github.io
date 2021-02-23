@@ -1,0 +1,274 @@
+* {
+  font-family: "poppins", sans-serif;
+  background-color: #1d1d1d;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* height: 1000px; */
+  background-color: #1d1d1d;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5cd2b;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b39626;
+}
+
+nav {
+  font-weight: 700;
+}
+nav a:visited {
+  color: #fffaf2;
+}
+
+.sticky-top {
+  transition: 500ms ease;
+  background: transparent;
+}
+.sticky-top.scrolled {
+  background: #141414;
+}
+
+.box-1 {
+  margin-bottom: 30px;
+}
+
+/* hero */
+
+:root {
+  animation-delay: 5s;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.hero-text {
+  color: #f5cd2b;
+  font-weight: 700;
+}
+
+.paragraph-box {
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+}
+.paragraph-text {
+  font-size: 3vw;
+  color: #fffaf2;
+  text-align: center;
+}
+
+.paragraph-text a {
+  text-decoration: underline;
+}
+.paragraph-text a:visited {
+  color: #fffaf2;
+}
+.paragraph-text a:hover {
+  text-decoration: none;
+}
+
+.paragraph-box-2 {
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 60px;
+}
+.paragraph-text-2 {
+  font-size: 3vw;
+  color: #fffaf2;
+  text-align: center;
+}
+
+.link {
+  color: #fffaf2;
+  text-decoration: underline;
+}
+.link:visited {
+  color: #fffaf2;
+}
+.link:hover {
+  text-decoration: none;
+  color: #fffaf2;
+}
+
+.link2 {
+  color: #f5cd2b;
+}
+
+.link2:hover {
+  color: #f5cd2b;
+}
+
+/* id card */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  /* margin-left: 30px; */
+}
+
+#card {
+  background-color: transparent;
+  height: 200px;
+  width: 200px;
+  transition: 2s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+#front,
+#back {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  backface-visibility: hidden;
+}
+
+#back {
+  transform: rotateY(180deg);
+}
+#card:hover {
+  transform: rotateY(180deg);
+}
+
+/* arrow */
+.arrow {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  /* background-color: #fffaf2; */
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+
+.arrow a {
+  color: #f5cd2b;
+}
+
+/* svg for mobile */
+.svg {
+  display: none;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: #141414;
+  align-items: center;
+  justify-content: center;
+  color: #fffaf2;
+  text-align: center;
+  padding: 50px;
+  font-size: 3vw;
+}
+
+.footer span {
+  background-color: transparent;
+}
+
+.footer a {
+  color: #fffaf2;
+}
+.copy {
+  font-size: 2vw;
+  color: #f5cb1f;
+}
+
+/* for desktop */
+@media screen and (min-width: 1024px) {
+  .paragraph-box {
+    margin-top: 50px;
+    margin-right: 500px;
+    display: inline-block;
+    padding-left: 80px;
+  }
+
+  .paragraph-text {
+    font-size: 1.3vw;
+    text-align: left;
+  }
+
+  .container {
+    width: min-content;
+    height: auto;
+    padding-right: 150px;
+    margin-top: -270px;
+    /* background-color: white; */
+    float: right;
+  }
+
+  .paragraph-box-2 {
+    margin-top: -100px;
+    margin-left: 500px;
+    display: inline-block;
+    padding-right: 115px;
+    padding-left: 90px;
+    background-color: transparent;
+  }
+  .paragraph-text-2 {
+    font-size: 1.3vw;
+    text-align: right;
+  }
+
+  .svg {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: -300px;
+    margin-left: 120px;
+  }
+
+  .website {
+    animation-delay: 200s;
+    animation: webpage 2s ease-in-out;
+  }
+
+  @keyframes webpage {
+    from {
+      transform: translateY(-500px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .copy {
+    font-size: 1vw;
+  }
+  .footer {
+    font-size: 1.2vw;
+  }
+
+  .arrow {
+    font-size: 1.5vw;
+  }
+}
